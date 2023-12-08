@@ -178,7 +178,7 @@ def http_version(ip_adresi, port):
             sock.send(b'GET / HTTP/1.0\r\n\r\n')
             yanit = sock.recv(1024)
             sock.close()
-            return yanit.split(b'\r\n')[0]  # İlk satır genellikle sürüm bilgisini içerir
+            return yanit.split(b'\r\n')[0]  
     except:
         return None
 
@@ -245,7 +245,7 @@ def scan_ip(ip, thread_count, use_all_ports, specified_port=None):
             print(f"darkbones scan report {ip}")
             print("There is no open port")
 
-# IP tarama fonksiyonu
+
 
 parser = optparse.OptionParser()
 parser.add_option("-n", "--network", dest="target_ip",
