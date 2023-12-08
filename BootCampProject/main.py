@@ -4,7 +4,6 @@ import concurrent.futures
 import threading
 import ipaddress
 import optparse
-
 import dns
 
 lock = threading.Lock()
